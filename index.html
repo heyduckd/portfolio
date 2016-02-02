@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>David Heyduck's Portfolio</title>
-    <link rel="stylesheet" type="text/css" src="style.css">
-  </head>
-  <body>
-    <header>
-    </header>
-    <h1>David Heyduck's Portfolio</h1>
-    
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <title>Heyduck's Portfolio</title>
+   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+ </head>
+ <body>
+   <section id="contentSection">
+     <header id="nameContainer">
+       <img id="logo" src="img/ducklogo.png"/>
+     </header>
+
+     <nav>
+       <ul id="nav">
+         <li id="navTweet"><a id="social" href="https://twitter.com/DavidHeydoook">TWITTER</a></li>
+         <li id="navGit"><a id="social" href="https://github.com/heyduckd">GITHUB</a></li>
+         <li id="navLink"><a id="social" href="https://www.linkedin.com/in/david-heyduck-1385ab4b">LINKEDIN</a></li>
+       </ul>
+     </nav>
+
+     <section id="projects">
+       <article class="template">
+         <header>
+           <h1></h1>
+           <ul id="projectLinks">
+             <li id="ghRepo"><a href=""></a></li>
+             <li id="website"><a href=""></a></li>
+           </ul>
+         </header>
+         <section class="site-body"></section>
+       </article>
+     </section>
+
+   </section>
+
+   <footer>
+     &copy; 2016 Heyduck's Porfolio | heyduckd@gmail.com
+   </footer>
+
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script type="text/javascript" src="project.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+ </body>
 </html>
