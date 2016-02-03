@@ -4,16 +4,15 @@ body {
 
 /*LOGO*/
 
-#topSection {
+.topSection {
   display: flex;
   justify-content: center;
   background-color: none;
+  width: 100%;
 }
 
-#logo {
+.logo {
   padding-top: 5px;
-  width: 100px;
-  height: 100px;
 }
 
 /*NAVIGATION BAR*/
@@ -118,7 +117,6 @@ li a {
   text-decoration: none;
   color: black;
 }
-
 
 .template {
   display: none;

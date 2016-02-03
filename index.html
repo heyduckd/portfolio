@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <title>Heyduck's Portfolio</title>
-   <link rel="shortcut icon" type="image/x-icon" href="img/duckfavicon.png" />
-   <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
-   <!-- <link rel="stylesheet" href="vendors/skeleton.css" media="screen" title="no title" charset="utf-8"> -->
-   <!-- <link rel="stylesheet" href="vendors/normalize.css" media="screen" title="no title" charset="utf-8"> -->
-   <link rel="stylesheet" href="style/icons.css">
-   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
- </head>
- <body>
+  <head>
+    <meta charset="utf-8">
+      <title>Heyduck's Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="img/duckfavicon.png" />
+      <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+      <!-- <link rel="stylesheet" href="vendors/skeleton.css" media="screen" title="no title" charset="utf-8"> -->
+      <!-- <link rel="stylesheet" href="vendors/normalize.css" media="screen" title="no title" charset="utf-8"> -->
+      <link rel="stylesheet" href="style/icons.css">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+<body>
 <!-- LOGO SECTION -->
-     <container id="topSection">
-       <header id="nameContainer">
-         <a href="index.html"><img id="logo" src="img/ducklogo1.png"/></a>
-       </header>
-     </container>
+  <div class="topSection">
+    <a href="index.html"><img class="logo" src="img/ducklogo.svg"/></a>
+  </div>
 <!-- NAV BAR -->
-     <nav class="main-nav">
-       <ul class="nav-text">
-         <li class="tab" data-content="work"><a class="mywork" href="#">MY WORK</a></li>
-         <li class="tab" data-content="connect"><a class="connect" href="#">CONNECT</a></li>
-       </ul>
-     </nav>
-
+  <nav class="main-nav">
+    <ul class="nav-text">
+      <li class="tab" data-content="work"><a class="mywork" href="#">MY WORK</a></li>
+      <li class="tab" data-content="connect"><a class="connect" href="#">CONNECT</a></li>
+    </ul>
+  </nav>
 <!-- MY WORK -->
-
 <main>
-
-<section id="work" class="tab-content">
-  <article class="template" data-category="work">
-    <div class="work-block">
-       <a class="project-url" href=""><img class="project-image" src""/></a>
-       <div class="projects">
-          <article class="work-text">
-            <p class="project-summary"></p>
-          </article>
-       </div>
-     </div>
-   </article>
-</section>
-
- <section class="project-summary"></section>
-
+  <section id="work" class="tab-content">
+    <article class="template" data-category="work">
+      <div class="work-block">
+        <a class="project-url" href=""><img class="project-image" src""/></a>
+          <div class="projects">
+            <article class="work-text">
+              <p class="project-summary"></p>
+            </article>
+          </div>
+        </div>
+      </article>
+    </section>
+  <section class="project-summary"></section>
  <!-- CONNECT -->
-
  <section id="connect" class="tab-content">
    <article class="connect-article">
      <div class="connect-div">
@@ -56,22 +49,18 @@
           <li><a href="https://www.linkedin.com/in/david-heyduck-1385ab4b">LINKEDIN</a></li>
           <li><a href="https://github.com/heyduckd">GITHUB</a></li>
           <li><a href="https://twitter.com/DavidHeydoook">TWITTER</a></li>
-      </ul>
+        </ul>
       </div>
     </article>
   </section>
-
 </main>
-
 <!-- FOOTER -->
-
-   <footer>
-     &copy; 2016 Heyduck's Porfolio | heyduckd@gmail.com
-   </footer>
-
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-   <script type="text/javascript" src="scripts/project.js"></script>
-   <script type="text/javascript" src="scripts/app.js"></script>
-   <script type="text/javascript" src="scripts/workview.js"></script>
- </body>
+<footer>
+  &copy; 2016 Heyduck's Porfolio | heyduckd@gmail.com
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/project.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/workview.js"></script>
+</body>
 </html>

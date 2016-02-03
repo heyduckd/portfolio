@@ -1,5 +1,4 @@
 var workView = {};
-
 workView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
     var $contentHolder = $('main > section');
@@ -12,7 +11,6 @@ workView.handleMainNav = function() {
     });
   });
 };
-
 $(document).ready(function() {
   $('#work').hide();
   $('#connect').hide();
