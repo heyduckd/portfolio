@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+}
+
+/*LOGO*/
+
+#topSection {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  padding-top: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+/*NAVIGATION BAR*/
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  background-color: red;
+}
+
+.nav-text {
+  display: inline-flex;
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mywork , .connect {
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+  color: white;
+  background-color: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/*MY WORK*/
+
+.work-block {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.projects {
+  overflow: scroll;
+  max-height: 200px;
+  border: 1px dashed #C9CCC9;
+  margin: 0px 20px 0px 10px;
+}
+
+.project-image {
+  margin-left: 30px;
+  box-shadow: 1px 3px 3px 1px #C9CCC9;
+}
+
+.project-summary {
+  padding: 0px 20px 0px 20px;
+}
+
+/*CONNECT*/
+
+.connect-article {
+  display: flex;
+  justify-content: center;
+  background-color: none;
+}
+
+.connect-div {
+  flex-direction: column;
+  background-color: none;
+}
+
+.connect-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  background-color: none;
+}
+
+.contact-methods {
+  padding: 10px;
+  margin: 0px;
+  background-color: none;
+}
+
+li {
+  font-family: 'Oswald', sans-serif;
+  list-style: none;
+  flex-direction: row;
+  background-color: none;
+}
+
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+.template {
+  display: none;
+}
