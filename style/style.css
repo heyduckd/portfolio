@@ -5,8 +5,9 @@ body {
 /*LOGO*/
 
 .topSection {
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: 100%;
+  text-align: center;
   background-color: none;
   margin: 0px;
 }
