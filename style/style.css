@@ -5,14 +5,15 @@ body {
 /*LOGO*/
 
 .topSection {
-  display: flex;
-  justify-content: center;
-  background-color: none;
+  display: block;
   width: 100%;
+  text-align: center;
+  background-color: none;
+  margin: 0px;
 }
 
 .logo {
-  padding-top: 5px;
+  max-width: 100%;
 }
 
 /*NAVIGATION BAR*/
@@ -56,6 +57,8 @@ body {
 
 .work-block {
   display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
   padding-bottom: 30px;
 }
 
@@ -63,11 +66,11 @@ body {
   overflow: scroll;
   max-height: 200px;
   border: 1px dashed #C9CCC9;
-  margin: 0px 20px 0px 10px;
+  margin: 0px 0px 0px 10px;
 }
 
 .project-image {
-  margin-left: 30px;
+  margin-left: 0px;
   box-shadow: 1px 3px 3px 1px #C9CCC9;
 }
 
@@ -120,4 +123,18 @@ li a {
 
 .template {
   display: none;
+}
+
+main {
+  padding: 0px 0px 5% 0px;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #F0F0F0;
 }
