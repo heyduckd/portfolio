@@ -7,6 +7,7 @@ body {
 #topSection {
   display: flex;
   justify-content: center;
+  background-color: none;
 }
 
 #logo {
@@ -23,7 +24,9 @@ body {
   margin: 0px 0px 20px 0px;
   padding: 0px 0px 0px 0px;
   width: 100%;
-  background-color: red;
+  background-color: white;
+  box-shadow: 5px 3px 3px 3px #C9CCC9;
+
 }
 
 .nav-text {
@@ -36,10 +39,12 @@ body {
 .mywork , .connect {
   padding: 0px 10px 0px 10px;
   margin: 0px;
-  color: white;
+  color: black;
   background-color: none;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 2px 2px #C9CCC9;
 }
 
 .tab {
@@ -69,6 +74,7 @@ body {
 
 .project-summary {
   padding: 0px 20px 0px 20px;
+  font-family: 'Sanchez', serif;
 }
 
 /*CONNECT*/
@@ -85,7 +91,8 @@ body {
 }
 
 .connect-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
   font-size: 20px;
   padding: 0px;
   margin: 0px;
@@ -99,7 +106,8 @@ body {
 }
 
 li {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
   list-style: none;
   flex-direction: row;
   background-color: none;
