@@ -1,5 +1,4 @@
 var projects = [];
-
 function Project (opts) {
  this.title = opts.title;
  this.gitRepo = opts.gitRepo;
@@ -7,7 +6,6 @@ function Project (opts) {
  this.body = opts.body;
  this.img = opts.img;
 };
-
 Project.prototype.toHtml = function () {
  var $newProject = $('article.template').clone();
  $newProject.removeClass('template');
@@ -21,7 +19,6 @@ console.log('Hello')
 rawProject.forEach(function(ele) {
  projects.push(new Project(ele));
 });
-
 projects.forEach(function(a) {
  $('#work').append(a.toHtml());
 });
