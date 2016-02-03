@@ -5,30 +5,23 @@ function Project (opts) {
  this.gitRepo = opts.gitRepo;
  this.url = opts.url;
  this.body = opts.body;
+ this.img = opts.img;
 };
 
 Project.prototype.toHtml = function () {
  var $newProject = $('article.template').clone();
  $newProject.removeClass('template');
-
- $newProject.find('header > h1').text(this.title);
-
- $newProject.find('#ghRepo').html('<a href= "' + this.gitRepo + '">GitHub Repo</a>');
-
- $newProject.find('#website').html('<a href= "' + this.url + '">Project Link</a>');
-
- $newProject.find('.site-body').html(this.body);
-
- $newProject.append('<hr>');
-
+ $newProject.find('h1:first').html(this.title);
+ $newProject.find('.project-summary').html(this.body);
+ $newProject.find('.project-url').attr('href', this.url);
+ $newProject.find('.project-image').attr('src', this.img);
  return $newProject;
-
 };
-
+console.log('Hello')
 rawProject.forEach(function(ele) {
  projects.push(new Project(ele));
 });
 
 projects.forEach(function(a) {
- $('#projects').append(a.toHtml());
+ $('#work').append(a.toHtml());
 });
