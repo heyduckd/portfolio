@@ -1,5 +1,6 @@
 var rawProject = [
   {
+  id: 1,
   title: 'Equip',
   gitRepo: 'https://github.com/heyduckd/equip',
   url: 'http://heyduckd.github.io/equip/',
@@ -7,6 +8,7 @@ var rawProject = [
   img: 'img/equipsquarelogo.jpg'
   },
   {
+  id: 2,
   title: 'Busmall',
   gitRepo: 'https://github.com/heyduckd/busMall',
   url: 'http://heyduckd.github.io/busmall',
