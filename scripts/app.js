@@ -1,5 +1,4 @@
-var projects = [];
-
+// var projects = [];
 function Project (opts) {
   this.id = opts.id;
   this.title = opts.title;
@@ -7,28 +6,35 @@ function Project (opts) {
   this.url = opts.url;
   this.body = opts.body;
   this.img = opts.img;
-
 };
 
+Project.all = [];
+
 Project.prototype.toHtml = function() {
-  console.log("Testing 4-5-6")
   var template = Handlebars.compile($('#work-template').text());
   return template(this);
 };
 
-// Project.prototype.toHtml = function () {
-//  var $newProject = $('article.template').clone();
-//  $newProject.removeClass('template');
-//  $newProject.find('h1:first').html(this.title);
-//  $newProject.find('.project-summary').html(this.body);
-//  $newProject.find('.project-url').attr('href', this.url);
-//  $newProject.find('.project-image').attr('src', this.img);
-//  return $newProject;
-// };
-// console.log('Hello')
-rawProject.forEach(function(ele) {
- projects.push(new Project(ele));
-});
-projects.forEach(function(a) {
- $('#work').append(a.toHtml());
-});
+Project.loadAll = function(rawProject) {
+  rawProject.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+}
+
+Project.fetchAll = function() {
+  // if (localStorage.rawProject) {
+  //   Project.loadAll(JSON.parse(localStorage.rawProject));
+  //
+  // } else {
+    $.ajax ({
+      type: 'HEAD',
+      url: 'data/projects.json',
+      success: function(data, message, xhr) {
+        console.log("i am running");
+        localStorage.setItem('rawProject', JSON.stringify (data));
+        Project.loadAll(JSON.parse(data));
+        workView.initIndexPage();
+      }
+    });
+  // }
+}
