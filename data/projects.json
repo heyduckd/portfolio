@@ -3,14 +3,14 @@
   "title": "Equip",
   "gitRepo": "https://github.com/heyduckd/equip",
   "url": "http://heyduckd.github.io/equip/",
-  "body": "<p>Equip is a web application that churns out custom packing lists for various outdoor activities. The user can choose their type of activity, the weather they expect, and how long they plan on going. With that user input, pack lists are tailored and then presented. Users can then follow links to purchase any items that they don't already have. When they user returns home, they can access their saved list and review their trip. This project remains one of my proudest accomplishments and it\'s something I plan to keep up on, with the goal of one day selling the app to be integrated into REI's website and mobile application.</p>",
+  "body": "Equip is a web application that churns out custom packing lists for various outdoor activities. The user can choose their type of activity, the weather they expect, and how long they plan on going. With that user input, pack lists are tailored and then presented. Users can then follow links to purchase any items that they don't already have. When they user returns home, they can access their saved list and review their trip. This project remains one of my proudest accomplishments and it's something I plan to keep up on, with the goal of one day selling the app to be integrated into REI's website and mobile application.",
   "img": "img/equipsquarelogo.jpg"
   },
   {
   "title": "Busmall",
   "gitRepo": "https://github.com/heyduckd/busMall",
   "url": "http://heyduckd.github.io/busmall",
-  "body": "<p>Busmall is another web app that takes in user input. The user story involved a startup company called BusMall which offered SkyMall like services but on public transportation busses. The idea behind the app was that the company was deciding which products to put in production based on focus groups. The individuals in the focus groups would cycle through three randomly presented product images. They could click on one image to vote on it, and then three more images would appear. When the user went through 15 votes, they could see the summary of their choices in a chart. The company could then use the popularity data to decide which products to put in production.</p>",
+  "body": "Busmall is another web app that takes in user input. The user story involved a startup company called BusMall which offered SkyMall like services but on public transportation busses. The idea behind the app was that the company was deciding which products to put in production based on focus groups. The individuals in the focus groups would cycle through three randomly presented product images. They could click on one image to vote on it, and then three more images would appear. When the user went through 15 votes, they could see the summary of their choices in a chart. The company could then use the popularity data to decide which products to put in production.",
   "img": "img/busmallsquarelogo.jpg"
   }
 ]

@@ -19,22 +19,34 @@ Project.loadAll = function(rawProject) {
   rawProject.forEach(function(ele) {
     Project.all.push(new Project(ele));
   });
-}
+};
+
 
 Project.fetchAll = function() {
-  // if (localStorage.rawProject) {
-  //   Project.loadAll(JSON.parse(localStorage.rawProject));
-  //
-  // } else {
     $.ajax ({
       type: 'HEAD',
       url: 'data/projects.json',
       success: function(data, message, xhr) {
-        console.log("i am running");
-        localStorage.setItem('rawProject', JSON.stringify (data));
-        Project.loadAll(JSON.parse(data));
-        workView.initIndexPage();
+        console.log(xhr);
+        var eTag = xhr.getResponseHeader('eTag');
+        if (!localStorage.eTag || eTag !== localStorage.eTag) {
+          localStorage.eTag = eTag;
+          Project.getAll();
+        } else {
+          Project.loadAll(JSON.parse(localStorage.rawProject));
+          workView.initIndexPage();
+        }
       }
     });
-  // }
-}
+  }
+  // } else {
+  //   Project.getAll();
+  // };
+// };
+Project.getAll = function() {
+  $.getJSON('data/projects.json', function(rawProject) {
+    Project.loadAll(rawProject);
+    localStorage.rawProject = JSON.stringify(rawProject);
+    workView.initIndexPage();
+  });
+};
