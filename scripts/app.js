@@ -1,4 +1,5 @@
-// var projects = [];
+// (funtion(module) {
+
 function Project (opts) {
   this.id = opts.id;
   this.title = opts.title;
@@ -21,7 +22,6 @@ Project.loadAll = function(rawProject) {
   });
 };
 
-
 Project.fetchAll = function() {
     $.ajax ({
       type: 'HEAD',
@@ -39,10 +39,7 @@ Project.fetchAll = function() {
       }
     });
   }
-  // } else {
-  //   Project.getAll();
-  // };
-// };
+
 Project.getAll = function() {
   $.getJSON('data/projects.json', function(rawProject) {
     Project.loadAll(rawProject);
@@ -50,3 +47,6 @@ Project.getAll = function() {
     workView.initIndexPage();
   });
 };
+
+// module.loadAll = loadAll();
+// })(window);
