@@ -118,6 +118,19 @@ body {
   padding: 10px;
 }
 
+/*HOME PAGE*/
+
+.sliderdiv {
+  /*display: flex;*/
+  justify-content: center;
+}
+
+/*.slidercontainer {
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}*/
+
 /*WORK SECTION*/
 
 .work-block {
@@ -142,7 +155,6 @@ body {
 
 .project-image {
   margin-left: 0px;
-  /*box-shadow: 1px 3px 3px 1px #C9CCC9;*/
 }
 
 .project-summary {
@@ -151,7 +163,6 @@ body {
 }
 
 /*EDUCATION SECTION*/
-
 
 .edu-padding {
   display: flex;
