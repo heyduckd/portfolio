@@ -1,0 +1,22 @@
+[
+  {
+  "mapimg": "img/codefellowsmap.jpg",
+  "placeurl": "https://www.codefellows.org/",
+  "school": "Code Fellows - Seattle, WA",
+  "years": "2016",
+  "studied": "HTML, CSS, Javascript (jQuery, Node.js, AJAX, ...)"
+  },
+  {
+  "mapimg": "img/wsumap.jpg",
+  "placeurl": "https://wsu.edu/",
+  "school": "Washington State University - Pullman, WA",
+  "years": "Graduated: 2014",
+  "studied": "BA Digital Technology & Culture - Graphic Design"
+  },
+  {
+  "mapimg": "img/bellevuehighmap.jpg",
+  "placeurl": "https://www.bsd405.org/bhs/",
+  "school": "Bellevue High School - Bellevue, WA",
+  "years": "Graduated: 2010"
+  }
+]

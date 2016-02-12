@@ -1,7 +1,8 @@
-(function(module) {
+// (function(module) {
+
+// PROJECTS
 
   function Project (opts) {
-    this.id = opts.id;
     this.title = opts.title;
     this.gitRepo = opts.gitRepo;
     this.url = opts.url;
@@ -47,6 +48,59 @@
       workView.initIndexPage();
     });
   };
-  
-module.Project = Project;
-})(window);
+
+// module.Project = Project;
+// })(window);
+
+// EDUCATION
+
+// (function(module) {
+
+  function Edu (opts) {
+    this.school = opts.school;
+    this.years = opts.years;
+    this.studied = opts.studied;
+    this.mapimg = opts.mapimg;
+    this.placeurl = opts.placeurl;
+  };
+
+  Edu.all = [];
+
+  Edu.prototype.toHtml = function() {
+    var template = Handlebars.compile($('#edu-template').text());
+    return template(this);
+  };
+
+  Edu.loadAll = function(rawEdu) {
+    rawEdu.forEach(function(ele) {
+      Edu.all.push(new Edu(ele));
+    });
+  };
+
+  Edu.fetchAll = function() {
+    $.ajax ({
+      type: 'HEAD',
+      url: 'data/edu.json',
+      success: function(data, message, xhr) {
+        // console.log(xhr);
+        var eTag = xhr.getResponseHeader('eTag');
+        if (!localStorage.eTag || eTag !== localStorage.eTag) {
+          localStorage.eTag = eTag;
+          Edu.getAll();
+        } else {
+          Edu.loadAll(JSON.parse(localStorage.rawEdu));
+          eduView.initIndexPage();
+        }
+      }
+    });
+  }
+
+  Edu.getAll = function() {
+    $.getJSON('data/edu.json', function(rawEdu) {
+      Edu.loadAll(rawEdu);
+      localStorage.rawEdu = JSON.stringify(rawEdu);
+      eduView.initIndexPage();
+    });
+  };
+// module.Edu = Edu;
+// })(window);

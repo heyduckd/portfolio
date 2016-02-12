@@ -3,44 +3,86 @@
     <meta charset="utf-8">
     <title>Heyduck's Portfolio</title>
     <meta name="viewport" content="width=device-width" initial-scale="1">
+    <!-- BROWSER ICON -->
     <link rel="shortcut icon" type="image/x-icon" href="img/duckfavicon.png">
+    <!-- CSS STYLE GUIDE -->
     <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+    <!-- ICONS STYLE GUIDE -->
     <link rel="stylesheet" href="style/icons.css">
+    <!-- FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- POPULATES WORK SECTION -->
 
     <script id="work-template" type="text/x-handlebars-template">
-      <article id="project-{{id}}">
-        <div class="work-block">
+        <article class="work-block">
           <a class="project-url" href="{{url}}"><img class="project-image" src="{{img}}"/></a>
           <div class="projects">
             <article class="work-text">
               <p class="project-summary">{{{body}}}</p>
             </article>
           </div>
-        </div>
-      </article>
+        </article>
+    </script>
+
+    <!-- POPULATES EDUCATION SECTION -->
+
+    <script id="edu-template" type="text/x-handlebars-template">
+      <div class="edu-padding">
+        <a class="placelink" href="{{placeurl}}"><img class="map-image" src="{{mapimg}}"/></a>
+        <article class="edu-block">
+          <div class="education-details">
+            <h1 class="years">{{years}}</h1>
+            <h1 class="school-name">{{school}}</h1>
+            <h6 class="studied">{{studied}}</h6>
+          </div>
+        </article>
+      </div>
     </script>
 
   </head>
   <body>
+
   <!-- LOGO SECTION -->
+
   <section class="logosection">
     <div class="topSection">
       <a href="index.html"><img class="logo" src="img/ducklogo.svg"/></a>
     </div>
+    <article class="website-title">
+      <a class="davidheyducklink" href="index.html"><h1 class="davidheyduck">DAVID HEYDUCK</h1></a>
+    </article>
+    <aside class="phonenumber">
+      <h1 class="mynumber">425.577.4041</h1>
+    </aside>
+    <aside class="social-aside">
+      <a href="https://github.com/heyduckd"><img class="github-icon" src="img/github-icon.png"></a>
+      <a href="https://twitter.com/DavidHeydoook"><img class="twitter-icon" src="img/twitter-icon.png"></a>
+      <a href="https://www.linkedin.com/in/davidheyduck"><img class="linkedin-icon" src="img/linkedin-icon.png"></a>
+    </aside>
   </section>
+
   <!-- NAV BAR -->
+
   <nav class="main-nav">
     <ul class="nav-text">
-      <li class="tab" data-content="work"><a class="mywork" href="#">MY WORK</a></li>
-      <li class="tab" data-content="connect"><a class="connect" href="#">CONNECT</a></li>
+      <li class="tab" data-content="home"><a class="homepage" href="#">Home
+      <li class="tab" data-content="work"><a class="mywork" href="#">Work</a></li>
+      <li class="tab" data-content="education"><a class="myeducation" href="#">Education</a></li>
+      <li class="tab" data-content="connect"><a class="connect" href="#">Connect</a></li>
     </ul>
   </nav>
 
-  <section id="work" class="tab-content">
-  </section>
+  <!-- WORK SECTION -->
+  <section id="work" class="tab-content"></section>
+
+  <!-- EDUCATION SECTON -->
+  <section id="education" class="tab-content"></section>
 
 
   <!-- CONNECT -->
@@ -56,15 +98,21 @@
       </div>
     </article>
   </section>
+
 <!-- FOOTER -->
+
 <footer>
   &copy; 2016 Heyduck's Porfolio | heyduckd@gmail.com
 </footer>
+
+<!-- SCRIPTS -->
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-<!-- <script type="text/javascript" src="scripts/project.js"></script> -->
 <script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/workview.js"></script>
 <script>Project.fetchAll();</script>
+<script>Edu.fetchAll();</script>
+
 </body>
 </html>
