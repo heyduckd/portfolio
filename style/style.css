@@ -2,18 +2,78 @@ body {
   margin: 0;
 }
 
-/*LOGO*/
+/*LOGO SECTION*/
 
 .topSection {
-  display: block;
-  width: 100%;
-  text-align: center;
+  max-width: 65px;
+  min-width: 65px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  background-color: none;
+}
+
+.logosection {
+  display: flex;
+  min-width: 480px;
+  max-height: 90px;
+  align-items: center;
+  border-bottom: 1px solid #C9CCC9;
   background-color: white;
-  margin: 0px;
+}
+
+.website-title {
+  width: 100%;
+  padding-left: 1%;
+  background-color: none;
+}
+
+.davidheyduck {
+  font-family: 'Bitter', serif;
+  font-size: 35px;
+  color: black;
+}
+
+.davidheyducklink {
+  text-decoration: none;
 }
 
 .logo {
   max-width: 100%;
+  min-width: 30px;
+}
+
+.phonenumber {
+  padding-right: 2%;
+}
+
+.mynumber {
+  font-family: 'Slabo 27px', serif;
+}
+
+.social-aside {
+  display: flex;
+}
+
+.github-icon {
+  padding: 10px;
+}
+
+.twitter-icon {
+  padding: 10px;
+}
+
+.linkedin-icon {
+  padding: 10px;
+}
+
+/*HIDES PHONE NUMBER AND SOCIAL MEDIA ICONS AT WIDTH OF 673 PIXELS*/
+
+@media only screen and (max-width: 673px) {
+  .phonenumber , .mynumber , .social-aside , .github-icon , .twitter-icon , .linkedin-icon {
+    display: none;
+  }
 }
 
 /*NAVIGATION BAR*/
@@ -21,12 +81,12 @@ body {
 .main-nav {
   display: flex;
   justify-content: center;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   width: 100%;
+  min-width: 400px;
   background-color: white;
-  box-shadow: 5px 3px 3px 3px #C9CCC9;
-
+  border-bottom: 1px solid #C9CCC9;
 }
 
 .nav-text {
@@ -36,15 +96,20 @@ body {
   margin: 0px;
 }
 
-.mywork , .connect {
-  padding: 0px 10px 0px 10px;
-  margin: 0px;
-  color: black;
-  background-color: none;
+.homepage , .mywork , .connect , .myeducation {
   font-size: 20px;
-  letter-spacing: 2px;
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 1px 2px 2px #C9CCC9;
+  font-family: 'Pontano Sans', sans-serif;
+  color: black;
+  padding: 1%;
+  background-color: none;
+}
+
+.homepage:hover , .mywork:hover , .connect:hover , .myeducation:hover {
+  font-size: 20px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: #baccde;
+  padding: 1%;
+  background-color: none;
 }
 
 .tab {
@@ -53,10 +118,11 @@ body {
   padding: 10px;
 }
 
-/*MY WORK*/
+/*WORK SECTION*/
 
 .work-block {
   display: flex;
+  padding-top: 2%;
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 30px;
@@ -82,6 +148,59 @@ body {
 .project-summary {
   padding: 0px 20px 0px 20px;
   font-family: 'Sanchez', serif;
+}
+
+/*EDUCATION SECTION*/
+
+
+.edu-padding {
+  display: flex;
+  min-height: 200px;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px dashed #C9CCC9;
+}
+
+.map-image {
+  max-width: 200px;
+}
+
+.edu-block {
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.education-details {
+  justify-content: center;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.school-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.years {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+.studied {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 }
 
 /*CONNECT*/
