@@ -18,6 +18,6 @@ workView.initIndexPage = function() {
 
 $(document).ready(function() {
   workView.handleMainNav();
-  // $('#work').hide();
+  $('#work').hide();
   $('#connect').hide();
 });
