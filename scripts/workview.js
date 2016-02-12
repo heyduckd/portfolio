@@ -40,4 +40,5 @@ $(document).ready(function() {
   $('#work').hide();
   $('#connect').hide();
   $('#education').hide();
+  $('.bxslider').bxSlider();
 });
