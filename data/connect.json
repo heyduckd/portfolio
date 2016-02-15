@@ -1,0 +1,25 @@
+[
+  {
+  "contactmethod": "LinkedIn",
+  "icon": "img/computericon.png",
+  "contacturl": "https://www.linkedin.com/in/david-heyduck-1385ab4b"
+  },
+  {
+  "contactmethod": "GitHub",
+  "icon": "img/gitcaticon.png",
+  "contacturl": "https://github.com/heyduckd"
+  },
+  {
+  "contactmethod": "Twitter",
+  "icon": "img/twitterbirdicon.png",
+  "contacturl": "https://twitter.com/DavidHeydoook"
+  },
+  {
+  "contactmethod": "Heyduckd@gmail.com",
+  "icon": "img/emailicon.png"
+  },
+  {
+  "contactmethod": "425.577.4041",
+  "icon": "img/phoneicon.png"
+  }
+]

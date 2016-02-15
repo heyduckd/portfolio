@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/duckfavicon.png">
     <!-- CSS STYLE GUIDE -->
     <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
-    <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+    <link href="style/jquery.bxslider.css" rel="stylesheet" />
     <!-- ICONS STYLE GUIDE -->
     <link rel="stylesheet" href="style/icons.css">
     <!-- FONTS -->
@@ -21,14 +21,14 @@
     <!-- POPULATES WORK SECTION -->
 
     <script id="work-template" type="text/x-handlebars-template">
-        <article class="work-block">
-          <a class="project-url" href="{{url}}"><img class="project-image" src="{{img}}"/></a>
-          <div class="projects">
-            <article class="work-text">
-              <p class="project-summary">{{{body}}}</p>
-            </article>
-          </div>
-        </article>
+      <article class="work-block">
+        <a class="project-url" href="{{url}}"><img class="project-image" src="{{img}}"/></a>
+        <div class="projects">
+          <article class="work-text">
+            <p class="project-summary">{{{body}}}</p>
+          </article>
+        </div>
+      </article>
     </script>
 
     <!-- POPULATES EDUCATION SECTION -->
@@ -46,7 +46,24 @@
       </div>
     </script>
 
+    <!-- POPULATES CONNECT SECTION -->
+
+    <script id="connect-template" type="text/x-handlebars-template">
+      <article class="connect-article">
+        <div class="connect-div">
+          <container class="cartooncontainer">
+            <a href="{{contacturl}}"><img class="cartoonicons" src="{{icon}}"></a>
+            <aside class="captionaside">
+              <h1 class="cartooncaptions">{{contactmethod}}</h1>
+            </aside>
+          </container>
+        </div>
+      </article>
+    </script>
+
+
   </head>
+
   <body>
 
   <!-- LOGO SECTION -->
@@ -72,19 +89,26 @@
 
   <nav class="main-nav">
     <ul class="nav-text">
-      <li class="tab" data-content="home"><a class="homepage" href="#">Home
+      <li class="tab" data-content="home"><a class="homepage" href="#">Home</a></li>
       <li class="tab" data-content="work"><a class="mywork" href="#">Work</a></li>
       <li class="tab" data-content="education"><a class="myeducation" href="#">Education</a></li>
       <li class="tab" data-content="connect"><a class="connect" href="#">Connect</a></li>
     </ul>
   </nav>
 
-  <ul class="bxslider">
-    <li><img src="/img/davidpic.jpg" /></li>
-    <li><img src="/img/equippic.jpg" /></li>
-    <li><img src="/img/fishmappic.jpg" /></li>
-    <li><img src="/img/randompic.jpg" /></li>
-  </ul>
+<!-- IMAGE SLIDER -->
+
+  <div class="sliderdiv">
+    <containter class="slidercontainer">
+      <ul class="bxslider">
+        <li><img src="/img/davidpic.jpg" /></li>
+        <li><img src="/img/equippic.jpg" /></li>
+        <li><img src="/img/fishmappic.jpg" /></li>
+        <li><img src="/img/randompic.jpg" /></li>
+      </ul>
+    </container>
+  </div>
+
 
   <!-- WORK SECTION -->
   <section id="work" class="tab-content"></section>
@@ -92,49 +116,8 @@
   <!-- EDUCATION SECTON -->
   <section id="education" class="tab-content"></section>
 
-
-  <!-- CONNECT -->
-  <section id="connect" class="tab-content">
-    <article class="connect-article">
-      <div class="connect-div">
-
-        <container class="cartooncontainer">
-          <a href="https://www.linkedin.com/in/david-heyduck-1385ab4b"><img class="cartoonicons" src="img/computericon.png"></a>
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">LinkedIn</h1>
-            </aside>
-        </container>
-
-        <container class="cartooncontainer">
-          <a href="https://github.com/heyduckd"><img class="cartoonicons" src="img/gitcaticon.png"></a>
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">GitHub</h1>
-            </aside>
-        </container>
-
-        <container class="cartooncontainer">
-          <a href="https://twitter.com/DavidHeydoook"><img class="cartoonicons" src="img/twitterbirdicon.png"></a>
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">Twitter</h1>
-            </aside>
-        </container>
-
-        <container class="cartooncontainer">
-          <img class="cartoonicons" src="img/emailicon.png">
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">Heyduckd@gmail.com</h1>
-            </aside>
-        </container>
-
-        <container class="cartooncontainer">
-          <img class="cartoonicons" src="img/phoneicon.png">
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">425.577.4041</h1>
-            </aside>
-        </container>
-      </div>
-    </article>
-  </section>
+  <!-- CONNECT SECTION -->
+  <section id="connect" class="tab-content"></section>
 
 <!-- FOOTER -->
 
@@ -146,11 +129,12 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-<script src="/js/jquery.bxslider.min.js"></script>
+<script src="scripts/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/workview.js"></script>
 <script>Project.fetchAll();</script>
 <script>Edu.fetchAll();</script>
+<script>Connect.fetchAll();</script>
 
 </body>
 </html>
