@@ -1,7 +1,7 @@
-// (function(module) {
-
 // PROJECTS
 
+
+(function(module) {
   function Project (opts) {
     this.title = opts.title;
     this.gitRepo = opts.gitRepo;
@@ -28,7 +28,6 @@
       type: 'HEAD',
       url: 'data/projects.json',
       success: function(data, message, xhr) {
-        console.log(xhr);
         var eTag = xhr.getResponseHeader('eTag');
         if (!localStorage.eTag || eTag !== localStorage.eTag) {
           localStorage.eTag = eTag;
@@ -48,14 +47,14 @@
       workView.initIndexPage();
     });
   };
+module.Project = Project;
+})(window);
 
-// module.Project = Project;
-// })(window);
 
 // EDUCATION
 
-// (function(module) {
 
+(function(module) {
   function Edu (opts) {
     this.school = opts.school;
     this.years = opts.years;
@@ -82,11 +81,11 @@
       type: 'HEAD',
       url: 'data/edu.json',
       success: function(data, message, xhr) {
-        // console.log(xhr);
         var eTag = xhr.getResponseHeader('eTag');
         if (!localStorage.eTag || eTag !== localStorage.eTag) {
           localStorage.eTag = eTag;
           Edu.getAll();
+          console.log("EDU Success");
         } else {
           Edu.loadAll(JSON.parse(localStorage.rawEdu));
           eduView.initIndexPage();
@@ -102,5 +101,56 @@
       eduView.initIndexPage();
     });
   };
-// module.Edu = Edu;
-// })(window);
+module.Edu = Edu;
+})(window);
+
+
+// CONNTECT
+
+
+(function(module) {
+  function Connect (opts) {
+    this.contactmethod = opts.contactmethod;
+    this.icon = opts.icon;
+    this.contacturl = opts.contacturl;
+  };
+
+  Connect.all = [];
+
+  Connect.prototype.toHtml = function() {
+    var template = Handlebars.compile($('#connect-template').text());
+    return template(this);
+  };
+
+  Connect.loadAll = function(rawConnect) {
+    rawConnect.forEach(function(ele) {
+      Connect.all.push(new Connect(ele));
+    });
+  };
+
+  Connect.fetchAll = function() {
+    $.ajax ({
+      type: 'HEAD',
+      url: 'data/connect.json',
+      success: function(data, message, xhr) {
+        var eTag = xhr.getResponseHeader('eTag');
+        if (!localStorage.eTag || eTag !== localStorage.eTag) {
+          localStorage.eTag = eTag;
+          Connect.getAll();
+        } else {
+          Connect.loadAll(JSON.parse(localStorage.rawConnect));
+          connectView.initIndexPage();
+        }
+      }
+    });
+  }
+
+  Connect.getAll = function() {
+    $.getJSON('data/connect.json', function(rawConnect) {
+      Connect.loadAll(rawConnect);
+      localStorage.rawConnect = JSON.stringify(rawConnect);
+      connectView.initIndexPage();
+    });
+  };
+module.Connect = Connect;
+})(window);

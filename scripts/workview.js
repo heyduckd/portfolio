@@ -16,6 +16,7 @@ workView.initIndexPage = function() {
   workView.handleMainNav();
 };
 
+
 // EDUCATION
 var eduView = {};
 
@@ -34,11 +35,30 @@ eduView.initIndexPage = function() {
   eduView.handleMainNav();
 };
 
+
+// CONNECT
+var connectView = {};
+
+connectView.handleMainNav = function() {
+  $('.main-nav').on('click', '.tab', function() {
+    $('.tab-content').hide();
+    $('#' + $(this).data('content')).show();
+  });
+  $('min-nav .tab:first').click();
+};
+
+connectView.initIndexPage = function() {
+  Connect.all.forEach(function(a) {
+    $('#connect').append(a.toHtml())
+  });
+  connectView.handleMainNav();
+};
+
 // HIDES CONTENT
 $(document).ready(function() {
   workView.handleMainNav();
-  $('#work').hide();
-  $('#connect').hide();
-  $('#education').hide();
   $('.bxslider').bxSlider();
+  $('#work').hide();
+  $('#education').hide();
+  $('#connect').hide();
 });
