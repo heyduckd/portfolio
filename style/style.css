@@ -30,7 +30,8 @@ body {
 }
 
 .davidheyduck {
-  font-family: 'Bitter', serif;
+  font-family: 'Convergence', sans-serif;
+  /*font-weight: 1000;*/
   font-size: 35px;
   color: black;
 }
@@ -49,7 +50,7 @@ body {
 }
 
 .mynumber {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Convergence', sans-serif;
 }
 
 .social-aside {
