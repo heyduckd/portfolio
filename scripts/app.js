@@ -34,7 +34,7 @@
           Project.getAll();
         } else {
           Project.loadAll(JSON.parse(localStorage.rawProject));
-          workView.initIndexPage();
+          // workView.initIndexPage();
         }
       }
     });
@@ -44,7 +44,7 @@
     $.getJSON('data/projects.json', function(rawProject) {
       Project.loadAll(rawProject);
       localStorage.rawProject = JSON.stringify(rawProject);
-      workView.initIndexPage();
+      // workView.initIndexPage();
     });
   };
 module.Project = Project;
@@ -85,10 +85,9 @@ module.Project = Project;
         if (!localStorage.eTag || eTag !== localStorage.eTag) {
           localStorage.eTag = eTag;
           Edu.getAll();
-          console.log("EDU Success");
         } else {
           Edu.loadAll(JSON.parse(localStorage.rawEdu));
-          eduView.initIndexPage();
+          // eduView.initIndexPage();
         }
       }
     });
@@ -98,7 +97,7 @@ module.Project = Project;
     $.getJSON('data/edu.json', function(rawEdu) {
       Edu.loadAll(rawEdu);
       localStorage.rawEdu = JSON.stringify(rawEdu);
-      eduView.initIndexPage();
+      // eduView.initIndexPage();
     });
   };
 module.Edu = Edu;
@@ -139,7 +138,7 @@ module.Edu = Edu;
           Connect.getAll();
         } else {
           Connect.loadAll(JSON.parse(localStorage.rawConnect));
-          connectView.initIndexPage();
+          // connectView.initIndexPage();
         }
       }
     });
@@ -149,7 +148,7 @@ module.Edu = Edu;
     $.getJSON('data/connect.json', function(rawConnect) {
       Connect.loadAll(rawConnect);
       localStorage.rawConnect = JSON.stringify(rawConnect);
-      connectView.initIndexPage();
+      // connectView.initIndexPage();
     });
   };
 module.Connect = Connect;
