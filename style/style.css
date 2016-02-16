@@ -71,7 +71,7 @@ body {
 
 /*HIDES PHONE NUMBER AND SOCIAL MEDIA ICONS AT WIDTH OF 673 PIXELS*/
 
-@media only screen and (max-width: 673px) {
+@media only screen and (max-width: 674px) {
   .phonenumber , .mynumber , .social-aside , .github-icon , .twitter-icon , .linkedin-icon {
     display: none;
   }
@@ -118,6 +118,7 @@ body {
   justify-content: center;
   padding: 10px;
 }
+
 
 /*HOME PAGE*/
 
@@ -177,6 +178,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   border-bottom: 1px dashed #C9CCC9;
+  align-items: center;
 }
 
 .map-image {
@@ -185,7 +187,7 @@ body {
 
 .edu-block {
   display: flex;
-  padding-left: 1%;
+  padding-left: 5%;
   padding-right: 1%;
   width: 100%;
   justify-content: center;
@@ -201,22 +203,35 @@ body {
 }
 
 .school-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Convergence', sans-serif;
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: -15px;
+}
 
+.school-location {
+  font-family: 'Convergence', sans-serif;
+  color: black;
+  margin-bottom: -20px;
 }
 
 .years {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Convergence', sans-serif;
   font-size: 15px;
+  margin-bottom: -15px;
   color: grey;
 }
 
 .studied {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Convergence', sans-serif;
   font-size: 15px;
 }
+
+/*@media only screen and (max-width: 674px) {
+  .map-image {
+    display: none;
+  }
+}*/
 
 /*CONNECT SECTION*/
 
@@ -237,7 +252,7 @@ body {
 
 .cartooncontainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 1%;
   background-color: none;
@@ -250,7 +265,7 @@ body {
 }
 
 .cartooncaptions {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Convergence', sans-serif;
 }
 
 li {

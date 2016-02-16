@@ -57,6 +57,7 @@ module.Project = Project;
 (function(module) {
   function Edu (opts) {
     this.school = opts.school;
+    this.location = opts.location;
     this.years = opts.years;
     this.studied = opts.studied;
     this.mapimg = opts.mapimg;
