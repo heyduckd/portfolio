@@ -1,0 +1,130 @@
+/*WORK SECTION*/
+
+.work-block {
+  display: flex;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+}
+
+.work-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projects {
+  overflow: scroll;
+  max-height: 200px;
+  border: 1px dashed #C9CCC9;
+  margin: 0px 0px 0px 10px;
+}
+
+.project-image {
+  margin-left: 0px;
+}
+
+.project-summary {
+  padding: 0px 20px 0px 20px;
+  font-family: 'Sanchez', serif;
+}
+
+/*EDUCATION SECTION*/
+
+.edu-padding {
+  display: flex;
+  min-height: 200px;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px dashed #C9CCC9;
+  align-items: center;
+}
+
+.map-image {
+  max-width: 200px;
+}
+
+.edu-block {
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.education-details {
+  justify-content: center;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.school-name {
+  font-family: 'Convergence', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: -15px;
+}
+
+.school-location {
+  font-family: 'Convergence', sans-serif;
+  color: black;
+  margin-bottom: -20px;
+}
+
+.years {
+  font-family: 'Convergence', sans-serif;
+  font-size: 15px;
+  margin-bottom: -15px;
+  color: grey;
+}
+
+.studied {
+  font-family: 'Convergence', sans-serif;
+  font-size: 15px;
+}
+
+/*CONNECT SECTION*/
+
+.connect-article {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: none;
+}
+
+.cartoonicons {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: -18px;
+  background-color: none;
+}
+
+.connect-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: none;
+}
+
+.connecticons {
+  padding-left: 2%;
+  padding-right: 2%;
+  min-width: 100px;
+}
+
+.connect-text {
+  font-family: 'Convergence', sans-serif;
+  color: #333333;
+}

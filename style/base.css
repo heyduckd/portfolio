@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+/*HOME PAGE*/
+
+.sliderdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.slidercontainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 50%;
+  min-width: 400px;
+  /*height: 500px;*/
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  list-style: none;
+  flex-direction: row;
+  background-color: none;
+}
+
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.template {
+  display: none;
+}
+
+main {
+  padding: 0px 0px 5% 0px;
+}
+
+/*FOOTER*/
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #F0F0F0;
+}

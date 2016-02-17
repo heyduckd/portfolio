@@ -1,0 +1,22 @@
+/*HIDES PHONE NUMBER AND SOCIAL MEDIA ICONS AT WIDTH OF 673 PIXELS*/
+
+@media only screen and (max-width: 564px) {
+  .phonenumber , .mynumber , .social-aside , .github-icon , .twitter-icon , .linkedin-icon , .topSection , .logo , .work-text , .projects {
+    display: none;
+  }
+
+  .website-title {
+    max-width: 400px;
+    text-align: center;
+    /*padding-left: 12%;*/
+  }
+
+  .logosection {
+    
+  }
+
+  .work-block {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,101 @@
+/*LOGO SECTION*/
+
+.topSection {
+  max-width: 65px;
+  min-width: 65px;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1%;
+  padding-left: 2%;
+  background-color: none;
+}
+
+.logosection {
+  display: flex;
+  min-width: 480px;
+  max-height: 90px;
+  align-items: center;
+  border-bottom: 1px solid #C9CCC9;
+  background-color: white;
+}
+
+.website-title {
+  width: 100%;
+  padding-left: 1%;
+  background-color: none;
+}
+
+.davidheyduck {
+  font-family: 'Convergence', sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+.davidheyducklink {
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 100%;
+  min-width: 30px;
+}
+
+.social-aside {
+  display: flex;
+}
+
+.github-icon {
+  padding-left: 10px;
+}
+
+.twitter-icon {
+  padding-left: 10px;
+}
+
+.linkedin-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*NAVIGATION BAR*/
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  min-width: 400px;
+  background-color: white;
+  border-bottom: 1px solid #C9CCC9;
+}
+
+.nav-text {
+  display: inline-flex;
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.homepage , .mywork , .connect , .myeducation {
+  font-size: 20px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: black;
+  padding: 1%;
+  background-color: none;
+}
+
+.homepage:hover , .mywork:hover , .connect:hover , .myeducation:hover {
+  font-size: 20px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: #baccde;
+  padding: 1%;
+  background-color: none;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
