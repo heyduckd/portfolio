@@ -19,6 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
+
     <!-- POPULATES WORK SECTION -->
 
     <script id="work-template" type="text/x-handlebars-template">
@@ -31,15 +32,6 @@
         </div>
       </article>
     </script>
-
-    <!-- GITHUB FEED SECTION -->
-
-    <!-- <script id="repo-template" type="text/x-handlebars-template">
-      <article class="repo-block">
-        <a href="{{html_url}}"><h1 class="reponame">{{name}}</h1></a>
-        <p class="updated">{{updated_at}}</p>
-      </article>
-    </script> -->
 
     <!-- POPULATES EDUCATION SECTION -->
 
@@ -62,12 +54,10 @@
     <script id="connect-template" type="text/x-handlebars-template">
       <article class="connect-article">
         <div class="connect-div">
-          <container class="cartooncontainer">
+          <!-- <container class="cartooncontainer"> -->
             <a href="{{contacturl}}"><img class="cartoonicons" src="{{icon}}"></a>
-            <aside class="captionaside">
-              <h1 class="cartooncaptions">{{contactmethod}}</h1>
-            </aside>
-          </container>
+            <p class="connect-text">{{contactmethod}}</p>
+          <!-- </container> -->
         </div>
       </article>
     </script>
@@ -85,9 +75,9 @@
     <article class="website-title">
       <a class="davidheyducklink" href="/"><h1 class="davidheyduck">DAVID HEYDUCK</h1></a>
     </article>
-    <aside class="phonenumber">
+    <!-- <aside class="phonenumber">
       <h1 class="mynumber">4255774041</h1>
-    </aside>
+    </aside> -->
     <aside class="social-aside">
       <a href="https://github.com/heyduckd"><img class="github-icon" src="img/github-icongrey.png"></a>
       <a href="https://twitter.com/DavidHeydoook"><img class="twitter-icon" src="img/twitter-icongrey.png"></a>
@@ -98,7 +88,6 @@
   <!-- NAV BAR -->
 
   <nav class="main-nav">
-    <!-- <div class="icon-menu"></div> -->
     <ul class="nav-text">
         <li class="tab" data-content="home"><a class="homepage" href="/">Home</a></li>
         <li class="tab" data-content="work"><a class="mywork" href="/work">Work</a></li>
@@ -130,11 +119,7 @@
   <section id="education" class="tab-content"></section>
 
   <!-- CONNECT SECTION -->
-  <section id="connects">
-    <ul></ul>
     <section id="connect" class="tab-content"></section>
-  </section>
-
 
 </main>
 
@@ -154,10 +139,10 @@
 <script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/workview.js"></script>
 
-<script type="text/javascript" src=".git/.gitignore/githubToken.js"></script>
+<!-- <script type="text/javascript" src=".git/.gitignore/githubToken.js"></script> -->
 
-<script type="text/javascript" src="scripts/repo.js"></script>
-<script type="text/javascript" src="scripts/repoView.js"></script>
+<!-- <script type="text/javascript" src="scripts/repo.js"></script> -->
+<!-- <script type="text/javascript" src="scripts/repoView.js"></script> -->
 
 <script type="text/javascript" src="scripts/workController.js"></script>
 <script type="text/javascript" src="scripts/eduController.js"></script>

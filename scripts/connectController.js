@@ -9,9 +9,9 @@
 
     $('main > section').hide();
     $('#connect').show();
-    $('#connects').show();
+    // $('#connects').show();
 
-    repos.requestRepos(repoView.index);
+    // repos.requestRepos(repoView.index);
   // connectController.repo = function() {
   // }
 
