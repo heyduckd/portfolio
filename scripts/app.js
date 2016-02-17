@@ -1,6 +1,4 @@
 // PROJECTS
-
-
 (function(module) {
   function Project (opts) {
     this.title = opts.title;
@@ -52,8 +50,6 @@ module.Project = Project;
 
 
 // EDUCATION
-
-
 (function(module) {
   function Edu (opts) {
     this.school = opts.school;
@@ -106,8 +102,6 @@ module.Edu = Edu;
 
 
 // CONNTECT
-
-
 (function(module) {
   function Connect (opts) {
     this.contactmethod = opts.contactmethod;
