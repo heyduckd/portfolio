@@ -31,7 +31,6 @@ body {
 
 .davidheyduck {
   font-family: 'Convergence', sans-serif;
-  /*font-weight: 1000;*/
   font-size: 35px;
   color: black;
 }
@@ -45,35 +44,36 @@ body {
   min-width: 30px;
 }
 
-.phonenumber {
-  padding-right: 2%;
-}
-
-.mynumber {
-  font-family: 'Convergence', sans-serif;
-}
-
 .social-aside {
   display: flex;
 }
 
 .github-icon {
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .twitter-icon {
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .linkedin-icon {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*HIDES PHONE NUMBER AND SOCIAL MEDIA ICONS AT WIDTH OF 673 PIXELS*/
 
-@media only screen and (max-width: 674px) {
-  .phonenumber , .mynumber , .social-aside , .github-icon , .twitter-icon , .linkedin-icon {
+@media only screen and (max-width: 564px) {
+  .phonenumber , .mynumber , .social-aside , .github-icon , .twitter-icon , .linkedin-icon , .topSection , .logo , .work-text , .projects {
     display: none;
+  }
+  .website-title {
+    /*display: flex;*/
+    padding-left: 12%;
+  }
+  .work-block {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -118,7 +118,6 @@ body {
   justify-content: center;
   padding: 10px;
 }
-
 
 /*HOME PAGE*/
 
@@ -187,7 +186,7 @@ body {
 
 .edu-block {
   display: flex;
-  padding-left: 5%;
+  padding-left: 1%;
   padding-right: 1%;
   width: 100%;
   justify-content: center;
@@ -227,45 +226,44 @@ body {
   font-size: 15px;
 }
 
-/*@media only screen and (max-width: 674px) {
-  .map-image {
-    display: none;
-  }
-}*/
-
 /*CONNECT SECTION*/
 
 .connect-article {
-  display: flex;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: none;
+}
+
+.cartoonicons {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: -18px;
   background-color: none;
 }
 
 .connect-div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  padding-bottom: 1%;
-  width: 100%;
-  background-color: none;
-}
-
-.cartooncontainer {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
+  padding-bottom: 1%;
   padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: none;
 }
 
-.cartoonicons {
+.connecticons {
   padding-left: 2%;
   padding-right: 2%;
   min-width: 100px;
 }
 
-.cartooncaptions {
+.connect-text {
   font-family: 'Convergence', sans-serif;
+  color: #333333;
 }
 
 li {
@@ -289,6 +287,8 @@ li a {
 main {
   padding: 0px 0px 5% 0px;
 }
+
+/*FOOTER*/
 
 footer {
   position: fixed;
