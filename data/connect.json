@@ -16,6 +16,7 @@
   },
   {
   "contactmethod": "HeyduckD@Gmail.com",
-  "icon": "img/customicons/email.png"
+  "icon": "img/customicons/email.png",
+  "contacturl": "https://gmail.com"
   }
 ]
