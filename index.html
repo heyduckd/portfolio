@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <!-- BROWSER ICON -->
     <link rel="shortcut icon" type="image/x-icon" href="img/duckfavicon.png">
-    <!-- CSS STYLE GUIDE -->
-    <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+    <!-- SMACSS -->
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/module.css">
+    <link rel="stylesheet" href="style/state.css">
+    <link rel="stylesheet" href="style/theme.css">
+    <!-- SLIDER STYLE GUIDE-->
     <link href="style/jquery.bxslider.css" rel="stylesheet" />
     <!-- ICONS STYLE GUIDE -->
     <link rel="stylesheet" href="style/icons.css">
@@ -44,7 +49,7 @@
             <h1 class="school-name">{{school}}</h1>
             <h1 class="school-location">{{location}}</h1>
             <h6 class="studied">{{studied}}</h6>
-        </div>
+          </div>
         </article>
       </div>
     </script>
@@ -54,10 +59,8 @@
     <script id="connect-template" type="text/x-handlebars-template">
       <article class="connect-article">
         <div class="connect-div">
-          <!-- <container class="cartooncontainer"> -->
             <a href="{{contacturl}}" target="_blank"><img class="cartoonicons" src="{{icon}}"></a>
             <p class="connect-text">{{contactmethod}}</p>
-          <!-- </container> -->
         </div>
       </article>
     </script>
@@ -70,14 +73,11 @@
 
   <section class="logosection">
     <div class="topSection">
-      <a href="/"><img class="logo" src="img/ducklogo.svg"/></a>
+      <a href="/"><img class="logo" src="img/ducklogo.png"/></a>
     </div>
     <article class="website-title">
       <a class="davidheyducklink" href="/"><h1 class="davidheyduck">DAVID HEYDUCK</h1></a>
     </article>
-    <!-- <aside class="phonenumber">
-      <h1 class="mynumber">4255774041</h1>
-    </aside> -->
     <aside class="social-aside">
       <a href="https://github.com/heyduckd" target="_blank"><img class="github-icon" src="img/github-icongrey.png"></a>
       <a href="https://twitter.com/DavidHeydoook" target="_blank"><img class="twitter-icon" src="img/twitter-icongrey.png"></a>
@@ -89,14 +89,12 @@
 
   <nav class="main-nav">
     <ul class="nav-text">
-        <li class="tab" data-content="home"><a class="homepage" href="/">Home</a></li>
-        <li class="tab" data-content="work"><a class="mywork" href="/work">Work</a></li>
-        <li class="tab" data-content="education"><a class="myeducation" href="/edu">Education</a></li>
-        <li class="tab" data-content="connect"><a class="connect" href="/connect">Connect</a></li>
+      <li class="tab" data-content="home"><a class="homepage" href="/">Home</a></li>
+      <li class="tab" data-content="work"><a class="mywork" href="/work">Work</a></li>
+      <li class="tab" data-content="education"><a class="myeducation" href="/edu">Education</a></li>
+      <li class="tab" data-content="connect"><a class="connect" href="/connect">Connect</a></li>
     </ul>
   </nav>
-
-
 
 <main>
   <!-- IMAGE SLIDER -->
@@ -114,12 +112,10 @@
 
   <!-- WORK SECTION -->
   <section id="work" class="tab-content"></section>
-
   <!-- EDUCATION SECTON -->
   <section id="education" class="tab-content"></section>
-
   <!-- CONNECT SECTION -->
-    <section id="connect" class="tab-content"></section>
+  <section id="connect" class="tab-content"></section>
 
 </main>
 
@@ -134,13 +130,11 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script type="text/javascript" src="vendors/page.js/page.js"></script>
-<script src="scripts/jquery.bxslider.min.js"></script>
-
+<script type="text/javascript" src="scripts/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/workview.js"></script>
 
 <!-- <script type="text/javascript" src=".git/.gitignore/githubToken.js"></script> -->
-
 <!-- <script type="text/javascript" src="scripts/repo.js"></script> -->
 <!-- <script type="text/javascript" src="scripts/repoView.js"></script> -->
 
@@ -148,14 +142,11 @@
 <script type="text/javascript" src="scripts/eduController.js"></script>
 <script type="text/javascript" src="scripts/connectController.js"></script>
 <script type="text/javascript" src="scripts/homeController.js"></script>
-
 <script type="text/javascript" src="scripts/routes.js"></script>
 
 <script>Project.fetchAll();</script>
 <script>Edu.fetchAll();</script>
 <script>Connect.fetchAll();</script>
 <script>connectView.initIndexPage();</script>
-<!-- <script>Connect.loadAll()</script> -->
-
 </body>
 </html>
