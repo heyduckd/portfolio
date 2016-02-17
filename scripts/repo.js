@@ -5,9 +5,9 @@
 
   repos.requestRepos = function(callback) {
     $.ajax({
-      url: 'https://api.github.com/users/heyduckd/repos' + '?per_page=5&sort=updated',
+      url: 'github/users/heyduckd/repos' +
+      '?per_page=5&sort=updated',
       type: 'GET',
-      headers: {'Authorization': 'token ' + githubToken},
     }).done(function(data, status, xhr) {
       repos.all = data;
       callback();
